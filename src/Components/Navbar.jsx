@@ -16,6 +16,7 @@ import InfoIcon from "@mui/icons-material/Info";
 import CommentRoundedIcon from "@mui/icons-material/CommentRounded";
 import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
 import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = React.useState(false);
@@ -48,10 +49,28 @@ const Navbar = () => {
         <img src={Logo} alt="logo" />
       </div>
       <div className="navbar-links-container">
-        <a href="">Home</a>
-        <a href="">About</a>
-        <a href="">Testimonials</a>
-        <a href="">Contact</a>
+        <Link to="home" smooth={true} duration={300} className="link-pointer">
+          Home
+        </Link>
+        <Link to="about" smooth={true} duration={300} className="link-pointer">
+          About
+        </Link>
+        <Link
+          to="testimonials"
+          smooth={true}
+          duration={300}
+          className="link-pointer"
+        >
+          Testimonials
+        </Link>
+        <Link
+          to="contact"
+          smooth={true}
+          duration={300}
+          className="link-pointer"
+        >
+          Contact
+        </Link>
         <a href="">
           <BsCart2 className="navbar-cart-icon" />
         </a>

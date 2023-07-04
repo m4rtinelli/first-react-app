@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Reem Kufi", sans-serif !important;
+  scroll-behavior: smooth;
 }
 img {
   max-width: 100%;
@@ -39,6 +40,10 @@ nav {
   font-size: 1.1rem;
   font-weight: 600;
 }
+.link-pointer {
+  cursor: pointer;
+}
+
 .primary-button {
   padding: 0.9rem 1.75rem;
   background-color: white;
